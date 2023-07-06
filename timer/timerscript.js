@@ -6,11 +6,25 @@ const stop = document.getElementById("stop");
 const reset = document.getElementById("reset");
 
 let timer = false;
+function ms(x){
+    if((x>59)||(x<0)){
+        alert("Invalid input");
+        return false;
+    }
+    return true;
+}
+function h(x){
+    if((x>23)||(x<0)){
+        alert("Invalid input");
+        return false;
+    }
+    return true;
+}
 start.addEventListener("click", () => {
-    timer = true;
-    hr.innerHTML = parseInt(document.getElementById("hour").value);
+    if((timer = h(parseInt(document.getElementById("hour").value)) )&& (ms(parseInt(document.getElementById("minute").value))) &&( ms(parseInt(document.getElementById("second").value)))){
+        hr.innerHTML = parseInt(document.getElementById("hour").value);
     min.innerHTML = parseInt(document.getElementById("minute").value);
-    sec.innerHTML = parseInt(document.getElementById("second").value);
+    sec.innerHTML = parseInt(document.getElementById("second").value);}
     time();
 });
 stop.addEventListener("click", () => {
@@ -49,6 +63,7 @@ function time() {
         setTimeout(time, 1000);
     }
 }
+
 
 
 

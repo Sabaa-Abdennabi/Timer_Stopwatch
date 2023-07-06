@@ -2,13 +2,13 @@ body {
     padding: 0;
     margin: 0;
     font-family: verdana;
-    background-color: #BBAAB8;
+    background-color: #dcd2db;
 }
 h1{
     text-align: center;
     color: #292643;
-    padding: 1rem;
-    font-size: 3rem;
+    padding: 2rem;
+    font-size: 6rem;
 
 }
 .container{
