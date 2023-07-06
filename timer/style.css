@@ -2,7 +2,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: verdana;
-    background-color: #BBAAB8;
+    background-color: #dcd2db;
 }
 h1{
     text-align: center;
@@ -16,9 +16,23 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 36vh;
     width: 100%;
-    height: 100vh;
 }
+.custom-input {
+    background-color: #dcd2db;
+    color: #333;
+    border-color: #292643;
+    box-shadow: 0 0 0 0.2rem rgba(90, 38, 103, 0.25);
+    padding: 1rem;
+  }
+
+  .custom-input:focus {
+    background-color: #fff;
+    color: #333;
+    border-color: #292643;
+    box-shadow: 0 0 0 0.2rem rgba(90, 38, 103, 0.25);
+  }
 .digit{
     font-size: 6rem;
 }
