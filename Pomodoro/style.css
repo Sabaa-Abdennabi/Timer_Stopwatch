@@ -1,6 +1,3 @@
-body {
-    background-color: #f2f2f2;
-}
 
 .box {
     width: 600px;
@@ -56,6 +53,8 @@ h2 {
 
 .button-container button:hover {
     background-color: #014D6D;
+    color: #fff;
+    box-shadow: 0 0 10px #ccc;
 }
 
 .icon {
