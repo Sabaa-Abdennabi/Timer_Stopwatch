@@ -1,0 +1,121 @@
+div {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0px;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav .search-container {
+        float: none;
+    }
+
+    .topnav a,
+    .topnav input[type=text],
+    .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+
+}
+
+#logo img {
+    margin-right: 0px;
+    margin-left: 40px;
+}
+
+.brand-logo {
+    color: #333;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: Trade Gothic Bold Condensed, sans-serif;
+}
+
+
+.search-container {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+
+}
+
+.search-container input[type="text"] {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 15cm;
+}
+
+.sidebar {
+    height: 100%;
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    overflow-x: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style sidebar links */
+.sidebar a {
+    padding: 10px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+/* Style the main content */
+.main {
+    margin-left: 160px;
+    /* Same as the width of the sidenav */
+    padding: 0px 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
